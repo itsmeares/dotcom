@@ -12,6 +12,7 @@ import PortfolioPreview from '../components/PortfolioPreview.astro';
 import Skills from '../components/Skills.astro';
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
+import "../styles/global.css"
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection('projects'))
@@ -38,8 +39,8 @@ const projects = (await getCollection('projects'))
       </nav>
 
       <section class="intro">
-        <h1>Hi, I'm Aras.</h1>
-        <p>
+        <h1 class="font-sans text-6xl font-medium">Hi, I'm Aras.</h1>
+        <p class="font-sans text-base">
           I'm a developer based in London.
           I enjoy building things for the web.
         </p>
@@ -49,13 +50,6 @@ const projects = (await getCollection('projects'))
 </html>
 
 <style>
-	body {
-    margin: 0;
-    background: #0b0b0e;
-    color: #f5f5f5;
-    font-family: system-ui, sans-serif;
-  }
-
   .container {
     max-width: 640px;
     margin: 0 auto;
@@ -74,10 +68,6 @@ const projects = (await getCollection('projects'))
 
   .intro {
     padding-top: 120px;
-  }
-
-  h1 {
-    font-size: 3rem;
   }
 
   p {
