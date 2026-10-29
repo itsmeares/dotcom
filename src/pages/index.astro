@@ -39,10 +39,20 @@ const projects = (await getCollection('projects'))
       </nav>
 
       <section class="intro">
-        <h1 class="font-heading text-6xl font-medium">Hi, I'm Aras.</h1>
+        <h1 class="font-heading text-4xl font-medium">Hiya, I'm Aras.</h1>
+
+        <p class="font-sans text-sm">
+          I'm a web developer based in London.
+        </p>
+          <br>
+        <p class="font-sans text-base">I build web apps, self-hosted tools, and plugins. Right now, most of my time goes into <a href="https://github.com/itsmeares/staaash" target="_blank">Staaash</a>, a file drive you can host yourself.
+        </p>
+          <br>
+        <p class="font-sans text-base">I'm at college in the UK and working towards full-stack development. I plan to study computer science at university.
+        </p>
+          <br>
         <p class="font-sans text-base">
-          I'm a developer based in London.
-          I enjoy building things for the web.
+          Outside coding, I'm into hardware, games, and music.
         </p>
       </section>
     </main>
@@ -61,17 +71,11 @@ const projects = (await getCollection('projects'))
     justify-content: space-between;
   }
 
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-
   .intro {
     padding-top: 120px;
   }
 
   p {
     color: #a1a1aa;
-    line-height: 1.7;
   }
 </style>
